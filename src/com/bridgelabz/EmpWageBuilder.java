@@ -3,12 +3,21 @@ package com.bridgelabz;
 public class EmpWageBuilder {
 	public static void main(String[] args) {
 		 System.out.print("Welcome to Employee Wage Computation Program");
+		 //Constants
 		 int IS_FULL_TIME=1;
-		 double empCheck = Math.floor(Math.random()*10)%2;	
-				 if(empCheck==IS_FULL_TIME)
-					 System.out.println("\nEmployee is Present");
-				 else
-					 System.out.println("\nEmployee is Absent");
+		 int EMP_RATE_PER_HOUR=20;
+		 //Variables
+		 int empHrs=0;
+		 int empWage=0;
+		 //Computation
+		 
+		 double empCheck = Math.floor(Math.random()*10)%2;
+		 if(empCheck==IS_FULL_TIME)
+			 empHrs=8;
+		 else
+			 empHrs=0;
+		empWage=empHrs*EMP_RATE_PER_HOUR;
+		System.out.println("EmpWage"+empWage);
 					 
   }
 
